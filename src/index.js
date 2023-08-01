@@ -28,7 +28,7 @@ let inputValue  = '';
 
 function onFormSubmit(event) {
   event.preventDefault();
-  page = 10;
+  page = 1;
   selectors.gallery.innerHTML = '';
   // console.log(selectors.userInput.value);
   const inputValue = selectors.userInput.value.trim();
