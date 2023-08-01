@@ -1,11 +1,11 @@
-export function createMarkup(items) {
-    return items.map(item => {
-        return `
+export function createMarkup(items) {   
+    
+    return items.map(item => `
         <div class="photo-card">
             <div class="wrapper">
-            <a href="${item.largeImageURL}"> 
-                <img src="${item.webformatURL}" alt="${item.tags}" loading="lazy" width="300"/> 
-            </a>
+                <a href="${item.largeImageURL}"> 
+                    <img src="${item.webformatURL}" alt="${item.tags}" loading="lazy" width="300"/> 
+                </a>
             </div>
         <div class="info">
             <p class="info-item">
@@ -25,5 +25,5 @@ export function createMarkup(items) {
                 <span>${item.downloads}</span>
             </p>
         </div>
-        </div>`}).join('');
+        </div>`).join('');
 }
